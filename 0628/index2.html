@@ -61,8 +61,12 @@
                 age : 5,
                 howling : 10,
                 color : 'black',
+                sound : '멍멍',
                 tot : function(){
                     return (this.age + this.howling);
+                },
+                say : function(){
+                   return (this.sound);
                 }
             }
             var cat = {
@@ -70,15 +74,22 @@
                 age : 8,
                 howling : 4,
                 color : 'brown',
+                sound : '야옹',
                 tot : function(){
                     return (this.age + this.howling);
+                },
+                say : function(){
+                   return (this.sound);
                 }
             }
+
+            console.log(dog.say);
 
             animal = '<li class="list">강아지 이름 : ' + dog.name + "<br>" + '고양이 이름 : ' + cat.name + '<li>',
             animal += '<li class="list">강아지 나이 : ' + dog.age + "<br>" + '고양이 나이 : ' + cat.age + '<li>',
             animal += '<li class="list">강아지 색 : '+ dog.color + "<br>" + '고양이 색 : ' + cat.color + '<li>',
             animal += '<li class="list">고양이 강아지 나이 total : ' + (dog.age + cat.age) + '<li>',
+            animal += '<li class="list">강아지 sound : ' + dog.say() + "<br>" + '고양이 sound : ' + cat.say() + '<li>';
             $('.output2').html(animal);
 
         })(jQuery);
