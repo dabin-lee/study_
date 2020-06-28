@@ -1,9 +1,17 @@
 @charset "utf-8";
 
+*{ padding: 0; margin: 0; border:0; }
+img{vertical-align: top;}
+ul, li{list-style: none;}
+p{padding: 0; margin: 0;}
 
-#output-wrap{width: 100%; padding: 100px 0; background: #f0f0f0;}
-#output-wrap div {width: 1000px; margin: 0 auto; padding: 50px 0; background: #fff;}
-#output-wrap div h1 {text-align: center; font-size: 70px; color:#000;}
-#output-wrap div ul{list-style: none;}
-#output-wrap div .output{text-align: center; font-size: 30px; color:skyblue;}
+
+#output-wrap{width: 100%; background: #f0f0f0;}
+#output-wrap .output--inner {width: 100%; margin: 0 auto; padding: 50px 0; background: #fff;}
+#output-wrap .output--inner h1 {text-align: center; font-size: 70px; color:#000;}
+#output-wrap .output--inner .output{text-align: center; font-size: 30px; color:skyblue;}
+#output-wrap .output--inner p{position: relative; float:left; width: 25%;}
+#output-wrap .output--inner p span{display: inline-block; position: absolute; bottom:0; left:50%; transform: translateX(-50%); width: 100%; background: rgba(0,0,0,0.3); }
+#output-wrap .output--inner img{width: 100%; }
 .list{color:pink}
+
