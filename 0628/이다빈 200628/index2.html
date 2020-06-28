@@ -1,0 +1,89 @@
+<!DOCTYPE HTML> <!-- Document Object Modelling : DOM -->
+<html>
+<head>
+	<title>Javascript & jQuery</title>
+	<meta charset='utf-8'>
+    <meta name='Publisher' content='교사문선종'>
+
+    <!-- 2. CSS Style : VIEW  -->
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+    
+    <!-- 제이쿼리 라이브러리 Open Source -->
+	<script src='./js/lib/jquery-1.12.4.min.js'></script>
+    
+	
+</head>
+<body>
+
+    <!-- 1. HTML5 Markup : Modelling -->
+    <div id="output-wrap">
+        <div>
+            <h1>출력 내용</h1>
+            <ul class="output">js 출력 값 (이곳에 출력함)</ul>
+            <ul class="output2">js 출력 값 (이곳에 출력함)</ul>
+        </div>
+    </div>
+    
+    
+    <script>
+        ;(function($){
+
+            var txt;
+            var student = {
+                name : 'bin',
+                html : 100,
+                css : 99,
+                js : 77,
+                tot : function(){
+                    return (this.html+this.css+this.js);
+                },
+                avg : function(){
+                    return Math.round(this.tot()/3);
+                }
+            }
+
+
+            // 속성깂을 대괄호로 써도 상관 없음
+            // 함수에도 대괄호로 쓸 수 있음 뒤에 괄호 꼭!
+            txt = '<p> 이름 :' + student['name'] + '<p>';
+            txt += '<p> html :' + student['html'] + '<p>';
+            txt += '<p> css :' + student['css'] + '<p>';
+            txt += '<p> js :' + student['js'] + '<p>';
+            txt += '<p> 총점 :' + student['tot']() + '<p>';
+            txt += '<p> 평균 :' + student['avg']() + '<p>';
+
+            $('.output').html(txt);
+
+
+            var aniaml;
+            var dog = {
+                name : 'manggo',
+                age : 5,
+                howling : 10,
+                color : 'black',
+                tot : function(){
+                    return (this.age + this.howling);
+                }
+            }
+            var cat = {
+                name : 'dandi',
+                age : 8,
+                howling : 4,
+                color : 'brown',
+                tot : function(){
+                    return (this.age + this.howling);
+                }
+            }
+
+            animal = '<li class="list">강아지 이름 : ' + dog.name + "<br>" + '고양이 이름 : ' + cat.name + '<li>',
+            animal += '<li class="list">강아지 나이 : ' + dog.age + "<br>" + '고양이 나이 : ' + cat.age + '<li>',
+            animal += '<li class="list">강아지 색 : '+ dog.color + "<br>" + '고양이 색 : ' + cat.color + '<li>',
+            animal += '<li class="list">고양이 강아지 나이 total : ' + (dog.age + cat.age) + '<li>',
+            $('.output2').html(animal);
+
+        })(jQuery);
+        
+    </script>
+
+</body>
+</html>

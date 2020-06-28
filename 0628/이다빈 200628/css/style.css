@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+
+#output-wrap{width: 100%; padding: 100px 0; background: #f0f0f0;}
+#output-wrap div {width: 1000px; margin: 0 auto; padding: 50px 0; background: #fff;}
+#output-wrap div h1 {text-align: center; font-size: 70px; color:#000;}
+#output-wrap div ul{list-style: none;}
+#output-wrap div .output{text-align: center; font-size: 30px; color:skyblue;}
+.list{color:pink}
