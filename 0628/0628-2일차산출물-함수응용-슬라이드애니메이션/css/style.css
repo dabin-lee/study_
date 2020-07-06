@@ -1,0 +1,10 @@
+@charset "utf-8";
+* { margin:0; padding:0; border:0; }
+img { vertical-align:top; }
+ul,li { list-style:none; }
+
+#slide-container { width:100%;  }
+#slide-container .slide-view { width:100%; overflow:hidden; }
+#slide-container .slide-view .slide-wrap { position:relative; left:calc(-480px*0); width:calc(480px*12); margin-left:calc(-480px*4); }
+#slide-container .slide-view .slide-wrap .slide { float:left; width:480px; }
+#slide-container .slide-view .slide-wrap .slide img { width:100%; }

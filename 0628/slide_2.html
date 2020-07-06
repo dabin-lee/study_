@@ -1,0 +1,41 @@
+<!DOCTYPE HTML> <!-- Document Object Modelling : DOM -->
+<html>
+<head>
+	<title>Javascript & jQuery</title>
+	<meta charset='utf-8'>
+    <meta name='Publisher' content='교사문선종'>
+    <!-- <link rel="stylesheet" href="./css/slide_style.css"> -->
+    <style>
+        *{margin: 0; padding: 0; border: none;}
+        #slide-container{width: 100%;}
+        .slide-view{width: 100%;}
+        .slide-view .slide-wrap {position: relative; left:calc(-480px * 0); width: calc(480px*12);}
+        .slide-view .slide-wrap .slide{float:left; width: 480px;}
+        .slide-view .slide-wrap .slide img{width: 100%;}
+    </style>
+	<script src='./js/lib/jquery-1.12.4.min.js'></script>
+</head>
+<body>
+    <div id="slide-container">
+        <div class="slide-view">
+            <ul class="slide-wrap">
+                <li class="slide slide0"><img src="./img/restaurant-img25.jpg" alt="hamburger_img"></li>
+                <li class="slide slide1"><img src="./img/restaurant-img26.jpg" alt="hamburger_img"></li>
+                <li class="slide slide2"><img src="./img/restaurant-img27.jpg" alt="hamburger_img"></li>
+                <li class="slide slide3"><img src="./img/restaurant-img28.jpg" alt="hamburger_img"></li>
+
+                <li class="slide slide0"><img src="./img/restaurant-img25.jpg" alt="hamburger_img"></li>
+                <li class="slide slide1"><img src="./img/restaurant-img26.jpg" alt="hamburger_img"></li>
+                <li class="slide slide2"><img src="./img/restaurant-img27.jpg" alt="hamburger_img"></li>
+                <li class="slide slide3"><img src="./img/restaurant-img28.jpg" alt="hamburger_img"></li>
+
+                <li class="slide slide0"><img src="./img/restaurant-img25.jpg" alt="hamburger_img"></li>
+                <li class="slide slide1"><img src="./img/restaurant-img26.jpg" alt="hamburger_img"></li>
+                <li class="slide slide2"><img src="./img/restaurant-img27.jpg" alt="hamburger_img"></li>
+                <li class="slide slide3"><img src="./img/restaurant-img28.jpg" alt="hamburger_img"></li>
+            </ul>
+        </div>
+    </div>
+    <script src="./js/mainSlide2.js"></script>
+</body>
+</html>

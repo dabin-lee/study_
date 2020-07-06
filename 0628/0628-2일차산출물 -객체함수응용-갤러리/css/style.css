@@ -1,0 +1,13 @@
+@charset "utf-8";
+* { margin:0; padding:0; border:0; }
+img { vertical-align:top; }
+ul,li { list-style:none; }
+
+
+#output-wrap { width:100%; background:#f0f0f0; }
+#output-wrap div { width:100%; margin:0 auto; background:#fff; padding:50px 0; }
+#output-wrap div h1 { text-align:center; font-size:70px; color:#000; }
+#output-wrap div .output { text-align:center; font-size:30px; color:#555; }
+#output-wrap div .output p { float:left; width:25%;  }
+#output-wrap div .output p img { width:100%; }
+

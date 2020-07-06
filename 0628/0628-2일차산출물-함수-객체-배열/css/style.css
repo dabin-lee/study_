@@ -1,0 +1,7 @@
+@charset "utf-8";
+
+#output-wrap { padding:100px 0; width:100%; background:#f0f0f0; }
+#output-wrap div { width:1000px; margin:0 auto; background:#fff; padding:50px 0; }
+#output-wrap div h1 { text-align:center; font-size:70px; color:#000; }
+#output-wrap div .output { text-align:center; font-size:30px; color:#555; }
+

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{padding: 0; margin: 0; border:0;}
+        img{vertical-align: top;}
+        ul, li{list-style: none; margin:0; padding:0;}
+
+        .wrap{overflow: hidden; position: relative; height:400px; margin:50px auto; border: 3px solid gold;}
+        .slide li {float:left; height: 400px;}
+        .slide li img {height: 100%;}
+
+        .dot{position: absolute; bottom:20px; left:50%; transform: translateX(-50%);}
+        .dot li{float:left; margin: 0 10px; padding: 15px 15px; font-size: 40px; background: #000; color:#fff; border-radius:50%;
+        }
+        .dot li:hover{background: rgba(0,0,0,.5); cursor: pointer;}
+    </style>
+	<script src='./js/lib/jquery-1.12.4.min.js'></script>
+</head>
+<body>
+    <div class="wrap">
+        <ul class="slide">
+            <li><img src="" alt=""></li>
+            <li><img src="" alt=""></li>
+            <li><img src="" alt=""></li>
+            <li><img src="" alt=""></li>
+        </ul>
+        <ul class="dot">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+<script>
+    // 브라우저 너비 구하기
+    var bw = $(window).width(),
+        wrAP = $('.wrap'),
+        sLide = wrAP.find('ul > li'),
+        listSlide = wrAP.find('> li:last'),
+        sLideImg = sLide.find('> img');
+
+        dOtList = $('.dot'),
+        dOt = dOtList.find('> li'),
+        dOtFirst = dOtList.find('> li:first');
+
+
+    //slide를 제외한 각각의 리스트와 이미지 보여줄 wrap 의 사이즈를 브라우저 사이즈로 설정
+    wrAP,sLide,sLideImg.css({width:bw});
+    wrAP.find(' > .slide').css({
+        width:bw*(listSlide.index() + 1)
+    });
+
+    // window가 변경될 때마다 브라우저 너비구하기
+    // $(window).resize(function(){
+    //     bw();
+    //     wrAP,sLide,sLide,sLideImg.css({width:bw*(listSlide.index() + 1)
+    // });
+
+
+    var cnt = 0;
+    dOtFirst.css("background" , "pink");
+
+function show(){
+    cnt++;
+    dOtFirst.css("background" , "black");
+
+    if(listSlide.index() >= cnt){
+        sLide.animate({marginLeft : -bw * cnt});
+        $('.dot li').css("background", "#000");
+        $('.dot li').eq(cnt).css("background", "rgba(0,0,0,.5)");
+    }else{
+        dOt.css("background", "#000");//cnt가 4일때 모든 dot -> 검정
+        dOtFirst.css("background", "rgba(0,0,0,.5)"); //첫번째만 바꿔 줌
+        sLide.not(listSlide).appendTo(slide);
+        sLide.css({marginLeft:0});
+        sLide.animate({marginLeft:-bw},function(){
+            wrAP.find('>ul>li:first').appendTo(".slide");
+            $('.slide').css({marginLeft:0});
+            cnt = 0;
+        });
+    }
+}
+
+
+
+function coUnt(){
+    setInterval("show()",2000);
+}
+coUnt();
+
+</script>
+</html>
+
+https://m.blog.naver.com/PostView.nhn?blogId=nemesis5198&logNo=221349769582&proxyReferer=https:%2F%2Fwww.google.com%2F

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-1.12.4.min.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>click_01 !</li>
+        <li>click_02 !</li>
+        <li>click_03 !</li>
+        <div class="indxx"></div>
+    </ul>
+</body>
+<script>
+
+    (function($){
+
+    $('ul > li').click(function(){
+            var idx = $("li").index(this);
+            $('.indxx').html('<p>' + 'index번호 :' +  idx +'</p>');
+            idx(i).css("background", "pink");
+            console.log(idx);
+        });
+
+    })(jQuery);
+</script>
+</html>
