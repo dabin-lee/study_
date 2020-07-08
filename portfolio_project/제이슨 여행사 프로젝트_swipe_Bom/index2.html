@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' type='text/css' href='./css/reset.css'>
+	<link rel='stylesheet' type='text/css' href='./css/fonts.css'>
+	<link rel='stylesheet' type='text/css' href='./css/style2.css'>
+	<!-- <link rel='stylesheet' type='text/css' href='./css/response.css'> -->
+
+
+	<script src='./js/lib/jquery-1.12.4.min.js'></script>
+	<script src='./js/lib/jquery.easing.1.3.js'></script>
+	<script src='./js/lib/jquery.touchSwipe.js'></script>
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--
+
+	슬라이드 좌측에 3개를 좌측으로 보내야 해서 마진 레프트로 보내는 거예요
+
+	슬라이드 이미지가 총 6개 이고 화면에 보여지는 갯수가 3개 보이고  처음 슬라이드 이미지 앞에 마지막 3개를  추가해서 추가된 3개를 마진 레프트 해준거예요 당연히 되어 있어야 뒤로 갈때 이어져 보이지요
+
+ -->
+
+
+</head>
+<body>
+    <main id='main'>
+    <!-- 섹션1 -->
+		<section id='mainSlide'>
+			<div class='mainSlide-container'>
+				<div class='mainSlide-view'>
+					<ul class='mainSlide-wrap clearfix'>
+						<li class='slide slide2'></li>
+						<li class='slide slide0'></li>
+						<li class='slide slide1'></li>
+						<li class='slide slide2'></li>
+						<li class='slide slide0'></li>
+					</ul> <!-- wrap -->
+				</div> <!-- view -->
+				<!-- TITLE -->
+				<div class='title'>
+					<h3>Your Luxury Travel Lounge</h3>
+					<h2>MORe than trIP. morip</h2>
+				</div>
+				<!-- ARROW -->
+				<div class='arrow'>
+					<span class='PrevBtn-wrap'><a href='javascript:' class='mainSlidePrevBtn'><img src='./img/visu_slick_prev.png' alt='prev'></a></span>
+					<span class='NextBtn-wrap'><a href='javascript:' class='mainSlideNextBtn'><img src='./img/visu_slick_next.png' alt='next'></a></span>
+				</div>
+    			<!-- PAGE BUTTON -->
+				<ul class='pageBtn-wrap'>
+					<li><a href='javascript:' class='mainSlidePageBtn blind addPage'>page0</a></li>
+					<li><a href='javascript:' class='mainSlidePageBtn blind'>page1</a></li>
+					<li><a href='javascript:' class='mainSlidePageBtn blind'>page2</a></li>
+				</ul>
+				<!-- NEXT SECTION -->
+				<div class='next'>
+					<a href='javascript:' class='nextBtn'>
+						<span>SCROLL TO DISCOVER MORE</span><br>
+						<span><img src='./img/arr_down_thin.png' alt=''></span>
+					</a>
+				</div>
+			</div> <!-- continer -->
+		</section>
+    <!-- 섹션1 -->
+    		<!-- 섹션4 -->
+		<section id='TravelLounge'>
+			<div class='wrap'>
+				<div class='gap'>
+					<div class='container'>
+
+						<div class='content-title'>
+							<h2>Travel Lounge</h2>
+							<h3><i class='blind'>Underline</i></h3>
+							<h4>Please write down your beautiful memories</h4>
+						</div>
+
+						<div class='content'>
+							<div class='s4Slide-container'>
+								<div class='s4Slide-view'>
+									<ul class='s4Slide-wrap clearfix'>
+										<li class='s4Slide s4Slide3'>
+											<div>
+												<div class='s4Slide-content'>
+													<div>
+														<div class='image'>
+															<!-- 배경이미지 : background-image -->
+														</div>
+														<div class='caption'>
+															<h4>Travlelog</h4>
+															<h5>2019.07.10</h5>
+															<h6>by. Marianne SUH</h6>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</li>
+										<li class='s4Slide s4Slide4'>
+											<div>
+												<div class='s4Slide-content'>
+													<div>
+														<div class='image'>
+															<!-- 배경이미지 : background-image -->
+														</div>
+														<div class='caption'>
+															<h4>크레타 섬 의 Abaton Island Resort & Spa</h4>
+															<h5>2019.07.02</h5>
+															<h6>by. Jenna CHOI</h6>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</li>
+										<li class='s4Slide s4Slide5'>
+											<div>
+												<div class='s4Slide-content'>
+													<div>
+														<div class='image'>
+															<!-- 배경이미지 : background-image -->
+														</div>
+														<div class='caption'>
+															<h4>스코틀랜드 - The Fife Arms</h4>
+															<h5>2019.07.02</h5>
+															<h6>by. Eunice KIM</h6>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</li>
+										<li class='s4Slide s4Slide0'>
+											<div>
+												<div class='s4Slide-content'>
+													<div>
+														<div class='image'>
+															<!-- 배경이미지 : background-image -->
+														</div>
+														<div class='caption'>
+															<h4>파리 - Hotel Plaza Athenee</h4>
+															<h5>2019.08.01</h5>
+															<h6>by. Nancy CHOI</h6>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class='s4Slide s4Slide1'>
+											<div>
+												<div class='s4Slide-content'>
+													<div>
+														<div class='image'></div>
+														<div class='caption'>
+															<h4>캄보디아의 - Alila Koh russey</h4>
+															<h5>2019.07.10</h5>
+															<h6>by. Bonnie HAN</h6>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class='s4Slide s4Slide2'>
+											<div>
+												<div class='s4Slide-content'>
+													<div>
+														<div class='image'>
+															<!-- 배경이미지 : background-image -->
+														</div>
+														<div class='caption'>
+															<h4>Travlelog</h4>
+															<h5>2019.07.10</h5>
+															<h6>by. Marianne SUH</h6>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</li>
+										<li class='s4Slide s4Slide3'>
+											<div>
+												<div class='s4Slide-content'>
+													<div>
+														<div class='image'>
+															<!-- 배경이미지 : background-image -->
+														</div>
+														<div class='caption'>
+															<h4>크레타 섬 의 Abaton Island Resort & Spa</h4>
+															<h5>2019.07.02</h5>
+															<h6>by. Jenna CHOI</h6>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</li>
+										<li class='s4Slide s4Slide4'>
+											<div>
+												<div class='s4Slide-content'>
+													<div>
+														<div class='image'>
+															<!-- 배경이미지 : background-image -->
+														</div>
+														<div class='caption'>
+															<h4>스코틀랜드 - The Fife Arms</h4>
+															<h5>2019.07.02</h5>
+															<h6>by. Eunice KIM</h6>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</li>
+										<li class='s4Slide s4Slide5'>
+											<div>
+												<div class='s4Slide-content'>
+													<div>
+														<div class='image'>
+															<!-- 배경이미지 : background-image -->
+														</div>
+														<div class='caption'>
+															<h4>스위스 몽트뢰의 Clinique La Prairie</h4>
+															<h5>2019.06.27</h5>
+															<h6>by. Nancy CHOI</h6>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</li>
+										<li class='s4Slide s4Slide0'>
+											<div>
+												<div class='s4Slide-content'>
+													<div>
+														<div class='image'>
+															<!-- 배경이미지 : background-image -->
+														</div>
+														<div class='caption'>
+															<h4>파리 - Hotel Plaza Athenee</h4>
+															<h5>2019.08.01</h5>
+															<h6>by. Nancy CHOI</h6>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</li>
+										<li class='s4Slide s4Slide1'>
+											<div>
+												<div class='s4Slide-content'>
+													<div>
+														<div class='image'>
+															<!-- 배경이미지 : background-image -->
+														</div>
+														<div class='caption'>
+															<h4>캄보디아의 - Alila Koh russey</h4>
+															<h5>2019.07.10</h5>
+															<h6>by. Bonnie HAN</h6>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</li>
+										<li class='s4Slide s4Slide2'>
+											<div>
+												<div class='s4Slide-content'>
+													<div>
+														<div class='image'>
+															<!-- 배경이미지 : background-image -->
+														</div>
+														<div class='caption'>
+															<h4>Travlelog</h4>
+															<h5>2019.07.10</h5>
+															<h6>by. Marianne SUH</h6>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</li>
+									</ul>	<!-- wrap -->
+								</div>	<!-- view -->
+
+								<!-- <div class='pageBtn-wrap'>
+									<ul>
+										<li><a href='javascript:' class='pageBtn blind addPageBtnS4'>Page Button</a></li>
+										<li><a href='javascript:' class='pageBtn blind'>Page Button</a></li>
+										<li><a href='javascript:' class='pageBtn blind'>Page Button</a></li>
+										<li><a href='javascript:' class='pageBtn blind'>Page Button</a></li>
+										<li><a href='javascript:' class='pageBtn blind'>Page Button</a></li>
+										<li><a href='javascript:' class='pageBtn blind'>Page Button</a></li>
+									</ul>
+								</div> -->
+
+							</div>	<!-- container -->
+						</div>	<!-- content -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- 섹션4 -->
+		<!-- <script src="./js/section4Slide.js"></script> -->
+        </main>
+</body>
+</html>

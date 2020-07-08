@@ -1,0 +1,45 @@
+
+
+/* 메인 */
+#main { z-index:1; position:relative; }
+
+/* section1 */
+#mainSlide{}
+#mainSlide .mainSlide-container{}
+#mainSlide .mainSlide-container .mainSlide-view{}
+#mainSlide .mainSlide-container .mainSlide-view .mainSlide-wrap{}
+
+
+
+
+
+
+/* 섹션4 */
+/* Travel Lounge */
+#main #TravelLounge { z-index:2; position:relative; width:100%; padding:60px 0; background:#f6f6f6; }
+#main #TravelLounge .wrap .gap { margin:0 5px; }
+#main #TravelLounge .content-title { padding: 60px 0;}
+#main #TravelLounge .content-title h2 { color:#222; }
+
+#main #TravelLounge .content { width:100%; }
+#main #TravelLounge .content .s4Slide-container { position:relative; width:100%; }
+#main #TravelLounge .content .s4Slide-view { position:relative; width:100%; overflow:hidden; }
+#main #TravelLounge .content .s4Slide-view .s4Slide-wrap { position:relative; left:0; width:calc(523.3333333px*12); margin-left:calc(-523.3333333px*3); }
+#main #TravelLounge .content .s4Slide-view .s4Slide-wrap li.s4Slide { float:left; width:523.3333333px; height:auto; }
+#main #TravelLounge .content .s4Slide-view .s4Slide-wrap li.s4Slide > div { position:relative; margin:20px; }
+#main #TravelLounge .content .s4Slide-view .s4Slide-wrap li.s4Slide > div .s4Slide-content { z-index:1; position:relative; width:100%; background:#fff;
+     box-shadow:0px 0px 20px rgba(0,0,0, .15); }
+#main #TravelLounge .content .s4Slide-view .s4Slide-wrap li.s4Slide > div .s4Slide-content > div { position:relative; padding:12.4139301%; }
+
+#main #TravelLounge .content .s4Slide-view .s4Slide-wrap li.s4Slide  > div .s4Slide-content > div .image { z-index:1; position:relative; width:59.450414%;
+                                                                                                    height:216px; margin:0 auto; border-radius:50%; }
+#main #TravelLounge .content .s4Slide-view .s4Slide-wrap li.s4Slide0 > div .s4Slide-content > div .image { background:url(../img/lounge0.jpg) no-repeat 50% 50%; background-size:cover; }
+#main #TravelLounge .content .s4Slide-view .s4Slide-wrap li.s4Slide1 > div .s4Slide-content > div .image { background:url(../img/lounge1.jpg) no-repeat 50% 50%; background-size:cover; }
+#main #TravelLounge .content .s4Slide-view .s4Slide-wrap li.s4Slide2 > div .s4Slide-content > div .image { background:url(../img/lounge2.jpg) no-repeat 50% 50%; background-size:cover; }
+#main #TravelLounge .content .s4Slide-view .s4Slide-wrap li.s4Slide3 > div .s4Slide-content > div .image { background:url(../img/lounge3.jpg) no-repeat 50% 50%; background-size:cover; }
+#main #TravelLounge .content .s4Slide-view .s4Slide-wrap li.s4Slide4 > div .s4Slide-content > div .image { background:url(../img/lounge4.png) no-repeat 50% 50%; background-size:cover; }
+#main #TravelLounge .content .s4Slide-view .s4Slide-wrap li.s4Slide5 > div .s4Slide-content > div .image { background:url(../img/lounge5.jpg) no-repeat 50% 50%; background-size:cover; }
+#main #TravelLounge .content .s4Slide-view .s4Slide-wrap li.s4Slide > div .s4Slide-content > div .caption { z-index:1; position:relative; text-align:center; padding-top:16.5140039%; }
+#main #TravelLounge .content .s4Slide-view .s4Slide-wrap li.s4Slide > div .s4Slide-content > div .caption h4 { font-size:16px; color:#666; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+#main #TravelLounge .content .s4Slide-view .s4Slide-wrap li.s4Slide > div .s4Slide-content > div .caption h5 { font-size:13px; padding:4.128501% 0 11.0093359% 0; color:#6f184e; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+#main #TravelLounge .content .s4Slide-view .s4Slide-wrap li.s4Slide > div .s4Slide-content > div .caption h6 { font-size:13px; color:#999; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
